@@ -5,6 +5,8 @@ RSpec.describe Category, type: :model do
     subject(:category) { create(:category) }
 
     it { should have_many :subcategories }
+
+    it { should have_many(:subjects).through(:subcategories) }
   end
 
   context 'validations' do
