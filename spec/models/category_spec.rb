@@ -4,9 +4,7 @@ RSpec.describe Category, type: :model do
   context 'associations' do
     subject(:category) { create(:category) }
 
-    it { should have_many :subcategories }
-
-    it { should have_many(:subjects).through(:subcategories) }
+    it { should have_many :subjects }
   end
 
   context 'validations' do

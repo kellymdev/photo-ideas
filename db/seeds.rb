@@ -1,37 +1,39 @@
 # Categories
-landscape = Category.create(name: 'Landscape')
-macro = Category.create(name: 'Macro')
-urban = Category.create(name: 'Urban')
-wildlife = Category.create(name: 'Wildlife')
-
-# Subcategories
-nature = macro.subcategories.create(name: 'Nature')
-objects = macro.subcategories.create(name: 'Objects')
-shapes = macro.subcategories.create(name: 'Shapes')
-
-birds = wildlife.subcategories.create(name: 'Birds')
-mammals = wildlife.subcategories.create(name: 'Mammals')
-reptiles = wildlife.subcategories.create(name: 'Reptiles')
+nature = Category.create(name: 'Nature')
+objects = Category.create(name: 'Objects')
+shapes = Category.create(name: 'Shapes')
 
 # Subjects
 nature.subjects.create([
+  { name: 'Bark' },
+  { name: 'Dandelion' },
   { name: 'Dew' },
   { name: 'Flower' },
+  { name: 'Fruit' },
   { name: 'Grass' },
   { name: 'Ice' },
   { name: 'Insect' },
   { name: 'Leaf' },
   { name: 'Moss' },
-  { name: 'Spider' },
+  { name: 'Seed' },
+  { name: 'Spider' }
 ])
 
 objects.subjects.create([
+  { name: 'Bead' },
+  { name: 'Button' },
+  { name: 'Candle' },
+  { name: 'Dice' },
   { name: 'Fabric' },
   { name: 'Fork' },
   { name: 'Paper clip' },
+  { name: 'Peg / Clothespin' },
   { name: 'Pen' },
   { name: 'Pencil' },
+  { name: 'Pencil shavings' },
   { name: 'Pin' },
+  { name: 'Ribbon' },
+  { name: 'Safety pin' },
   { name: 'Sequin' },
   { name: 'Spoon' },
   { name: 'String' },
@@ -40,6 +42,7 @@ objects.subjects.create([
 
 shapes.subjects.create([
   { name: 'Circle' },
+  { name: 'Cube' },
   { name: 'Cylinder' },
   { name: 'Diamond' },
   { name: 'Donut' },

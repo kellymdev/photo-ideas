@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :subject do
-    name 'Bug'
+    name 'Insect'
   end
 end

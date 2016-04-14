@@ -1,7 +1,7 @@
 <h2><%= @category.name %></h2>
 
 <ul>
-  <% @subcategories.each do |subcategory| %>
-    <li><%= link_to subcategory.name, category_subcategory_path(@category, subcategory) %></li>
+  <% @subjects.each do |subject| %>
+    <li><%= subject.name %></li>
   <% end %>
 </ul>

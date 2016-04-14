@@ -1,5 +1,5 @@
 <ul>
   <% @categories.each do |category| %>
-    <li><%= link_to category.name, category %></li>
+    <li><%= link_to category.name, category %> | <%= link_to "Display a random subject from this category", category_random_path(category) %></li>
   <% end %>
 </ul>

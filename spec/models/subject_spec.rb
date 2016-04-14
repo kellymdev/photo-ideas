@@ -4,7 +4,7 @@ RSpec.describe Subject, type: :model do
   context 'associations' do
     subject(:subject) { create(:subject) }
 
-    it { should belong_to :subcategory }
+    it { should belong_to :category }
   end
 
   context 'validations' do

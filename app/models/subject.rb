@@ -1,5 +1,5 @@
 class Subject < ActiveRecord::Base
-  belongs_to :subcategory
+  belongs_to :category
 
   validates :name, presence: true, length: { minimum: 2 }
 end
