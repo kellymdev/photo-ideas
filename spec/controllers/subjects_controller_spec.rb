@@ -4,8 +4,8 @@ RSpec.describe SubjectsController, type: :controller do
   let!(:category) { create(:category) }
 
   describe '#random' do
-    subject { get :random, category_id: category.id }
+    subject { get :random, category: { id: category.id } }
 
-    it { is_expected.to render_template :random }
+    it { is_expected.to render_template :index }
   end
 end
