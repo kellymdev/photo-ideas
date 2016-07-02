@@ -1,18 +1,18 @@
 body {
-  background-color: #FFFFE4;
+  background-color: #f2e6cb;
 }
 
 h1 {
   font-family: 'Dancing Script';
-  border-bottom: 2px solid #8C5765;
+  border-bottom: 2px solid #8c5765;
 }
 
 h1, p {
-  color: #8C5765;
+  color: #8c5765;
   padding: 10px;
 }
 
 p {
   font-family: 'Kalam';
-  border: 1px solid #8C5765;
+  border: 1px solid #8c5765;
 }
